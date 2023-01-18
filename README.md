@@ -1,0 +1,1 @@
+This repo contains scripts related to the FreePBX Distro that I'm using to automate my work.
