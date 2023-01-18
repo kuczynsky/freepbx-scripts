@@ -5,7 +5,7 @@ You will see hits from scanners in your sngrep, showing that your server receive
 The asterisk log file will only show registration attempts that are using FQDN.
 
 # How to use:
-> `git pull URL`\
+> `wget https://raw.githubusercontent.com/kuczynsky/freepbx-scripts/main/Allow_Registration_using_FQDN_only_%26_Enable_Intrusion_Detection_Sync/fqdn_reg_intrusion_detection_sync.sh`\
 `chmod +x fqdn_reg_intrusion_detection_sync.sh`\
 `./fqdn_reg_intrusion_detection_sync.sh pbx.example.com`\
 GUI -> Connectivity -> Firewall -> Intrusion Detection -> Import -> Select Desired Zones
@@ -30,6 +30,6 @@ Forum URL requesting help: https://community.freepbx.org/t/intrusion-detection-s
 -I INPUT -p tcp --dport 5060:5161 -m state --state ESTABLISHED,RELATED -j fpbxfirewall
 
 # Sources:
-https://taczanowski.net/securing-asterisk-sip-pbx-by-simple-iptables-rule-checking-if-the-domain-is-correct/\
-https://community.freepbx.org/t/pbx-security/57441/9\
-https://www.cyber-cottage.co.uk/?p=1028
+- https://taczanowski.net/securing-asterisk-sip-pbx-by-simple-iptables-rule-checking-if-the-domain-is-correct/
+- https://community.freepbx.org/t/pbx-security/57441/9
+- https://www.cyber-cottage.co.uk/?p=1028
